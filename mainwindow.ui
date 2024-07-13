@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>568</width>
+    <width>553</width>
     <height>327</height>
    </rect>
   </property>
@@ -101,14 +101,30 @@
      <string>Step Count:</string>
     </property>
    </widget>
-   <widget class="RenderArea" name="renderArea" native="true">
+   <widget class="QPushButton" name="btnBackground">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>30</y>
-      <width>271</width>
-      <height>221</height>
+      <y>260</y>
+      <width>75</width>
+      <height>24</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>Background</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLineColor">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>260</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Line Color</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnHuygens">
@@ -116,7 +132,7 @@
      <rect>
       <x>420</x>
       <y>110</y>
-      <width>75</width>
+      <width>91</width>
       <height>24</height>
      </rect>
     </property>
@@ -129,7 +145,7 @@
      <rect>
       <x>420</x>
       <y>50</y>
-      <width>75</width>
+      <width>91</width>
       <height>24</height>
      </rect>
     </property>
@@ -142,7 +158,7 @@
      <rect>
       <x>420</x>
       <y>80</y>
-      <width>75</width>
+      <width>91</width>
       <height>24</height>
      </rect>
     </property>
@@ -155,7 +171,7 @@
      <rect>
       <x>420</x>
       <y>170</y>
-      <width>75</width>
+      <width>91</width>
       <height>24</height>
      </rect>
     </property>
@@ -168,12 +184,22 @@
      <rect>
       <x>420</x>
       <y>140</y>
-      <width>80</width>
+      <width>91</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
      <string>Hypo Cycloid</string>
+    </property>
+   </widget>
+   <widget class="RenderArea" name="renderArea" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>271</width>
+      <height>221</height>
+     </rect>
     </property>
    </widget>
   </widget>
