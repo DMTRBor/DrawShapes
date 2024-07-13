@@ -48,6 +48,12 @@ void RenderArea::on_shape_changed ()
         mStepCount = 256;
         break;
 
+    case Line:
+        mScale = 100;
+        mIntervalLength = 1;
+        mStepCount = 128;
+        break;
+
     default:
         break;
     }
@@ -70,6 +76,10 @@ QPointF RenderArea::compute (float t)
 
     case HypoCycloid:
         return compute_hypo(t);
+        break;
+
+    case Line:
+        return compute_line(t);
         break;
 
     default:
@@ -109,6 +119,11 @@ QPointF RenderArea::compute_hypo(float t)
         1.5 * (2 * cos (t) + cos (2 * t)),  // X
         1.5 * (2 * sin (t) - sin (2 * t))  // Y
     );
+}
+
+QPointF RenderArea::compute_line(float t)
+{
+    return QPointF (1 - t, 1 - t);
 }
 
 void RenderArea::paintEvent(QPaintEvent *event)
