@@ -104,6 +104,24 @@ void MainWindow::on_btnStarfish_clicked()
 }
 
 
+void MainWindow::on_btnCloud_clicked()
+{
+    this->ui->renderArea->setShape(RenderArea::Cloud1);
+    this->ui->renderArea->repaint();
+
+    update_ui ();
+}
+
+
+void MainWindow::on_btnCloud2_clicked()
+{
+    this->ui->renderArea->setShape(RenderArea::Cloud2);
+    this->ui->renderArea->repaint();
+
+    update_ui ();
+}
+
+
 void MainWindow::on_spinScale_valueChanged(double scale)
 {
     this->ui->renderArea->setScale (scale);
